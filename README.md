@@ -29,4 +29,5 @@ Going to give this project a film makeover. As big cinephile myself it seems fun
 
 Going to start with the collage first before attempting to create the parallax caroussel.
 
-To be continued..
+Enlarging the image (poster) when clicking on it works but I spent more then half of a day to get it back to its original size afterwards.
+Still no solution but will keep on struggling until I get it.
