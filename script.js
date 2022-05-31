@@ -9,50 +9,26 @@ function randomLetter(){
 
 
 
-// trying to make something more efficient for enlarging images by getting elements by class name
+// For loop created for the query image array
 
-document.querySelectorAll(".image")[0].addEventListener("click" ,enlargeImage);
 
+const moviePosters = document.querySelectorAll(".image");
+
+for (let i = 0; i < moviePosters.length; i++) {
+    moviePosters[i].addEventListener("click", enlargeImage);
+    moviePosters[i].addEventListener("mouseout", resetImageSize);
+}
 
 
 // Function to enlarge Image 
 
 function enlargeImage() {
-    let img = document.querySelectorAll(".image")[0];
-    img.style.transform = "scale(2)";
-    img.style.transition = "transform 0.25s ease";
+
+    this.style.transform = "scale(2)";
+    this.style.transition = "transform 0.25s ease";
 
     console.log("large");
 }
-
-
-
-// Parallax Caroussel
-
-
-
-
-
-
-
-
-/*
-
-// Collage
-
-document.getElementById("enlarge").addEventListener("click", function() {
-   enlargeImage();
-
-})
-
-
-
-document.getElementById("close").addEventListener("click", function() {
-    resetImageSize();
-})
-
-
-
 
 
 
@@ -60,9 +36,8 @@ document.getElementById("close").addEventListener("click", function() {
 
 function resetImageSize() {
   
-    img = document.getElementById("close");
-    img.style.transform = "scale(1)";
-    img.style.transition = "transform 0.25s ease";
+    this.style.transform = "scale(1)";
+    this.style.transition = "transform 0.25s ease";
 
     console.log("reset");
 
@@ -70,8 +45,15 @@ function resetImageSize() {
 
 
 
+// Parallax Carousel
 
-*/
+
+
+
+
+
+
+
 
 
 
