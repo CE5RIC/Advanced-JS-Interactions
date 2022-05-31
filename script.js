@@ -17,6 +17,7 @@ const moviePosters = document.querySelectorAll(".image");
 for (let i = 0; i < moviePosters.length; i++) {
     moviePosters[i].addEventListener("click", enlargeImage);
     moviePosters[i].addEventListener("mouseout", resetImageSize);
+
 }
 
 
@@ -27,9 +28,8 @@ function enlargeImage() {
     this.style.transform = "scale(2)";
     this.style.transition = "transform 0.25s ease";
 
-    console.log("large");
+   
 }
-
 
 
 // function to reset Image size
@@ -39,9 +39,11 @@ function resetImageSize() {
     this.style.transform = "scale(1)";
     this.style.transition = "transform 0.25s ease";
 
-    console.log("reset");
-
 }
+
+
+// function to display text on clicked image
+
 
 
 
@@ -49,8 +51,12 @@ function resetImageSize() {
 
 
 
+// Dark mode
 
-
+let darkModeLight = document.querySelector('.mode');
+darkModeLight.addEventListener('click', function (){
+    document.body.classList.toggle('darkMode');
+})
 
 
 
