@@ -51,16 +51,48 @@ function resetImageSize() {
 
 
 
+
+
+
+
 // Dark mode
 
-let darkModeLight = document.querySelector('.mode');
-darkModeLight.addEventListener('click', function (){
-    document.body.classList.toggle('darkMode');
+let darkModeLight = document.querySelector(".mode");
+darkModeLight.addEventListener("click", function (){
+    document.body.classList.toggle("darkMode");
 })
 
 
 
 
+// Hover over Pokemons name (Credits to Shiva for this one)
+
+const pokeMouseOver = () => {
+    let pokeTags = document.querySelectorAll('.poke');
+    console.log(pokeTags);
+    pokeTags.forEach(el=>{
+        el.addEventListener('mouseover', ()=>{
+           let tooltip = el.querySelector('img');
+            console.log(tooltip)
+           tooltip.style.visibility = 'visible';
+            tooltip.style. opacity = '1';
+        })
+    })
+}
+const pokeMouseOut = () => {
+    let pokeTags = document.querySelectorAll('.poke');
+    pokeTags.forEach(el=>{
+        el.addEventListener('mouseout', ()=>{
+            let tooltip = el.querySelector('img');
+            console.log(tooltip)
+            tooltip.style.visibility = 'hidden';
+            tooltip.style. opacity = '0';
+        })
+    })
+}
+
+pokeMouseOver();
+pokeMouseOut();
 
 
 
