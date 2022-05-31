@@ -2,6 +2,48 @@ body{
     padding-bottom: 50px;
 }
 
+img {
+   
+    height: 250px;
+    
+}
+
+
+
+.lightMode{
+    background: rgb(245, 245, 245);
+    color: rgb(10, 10, 10);
+}
+
+.darkMode{
+    background: rgb(10, 10, 10);
+    color: rgb(245, 245, 245);
+}
+
+.bigTitle{
+    font-size: 2.5em;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.mode{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 47px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.mode:hover{
+    cursor: pointer;
+}
+
+
 .picture{
     padding: 10px;
 }
