@@ -36,3 +36,8 @@ Still no solution but will keep on struggling until I get it.
 I wanted to be able to close the enlarged photo by clicking on it but chose for a mouseout event for now to make it work. It wasn't the goal but it will do for now. Will have to go deeper into it on a later time to figure out how to that. Lots of work still do be done on this project.
 
 Now I have to figure out a way to make the enlargement work for all images without hard coding everything. Should look into loops for that I guess.
+
+I've created an object to store all images with document.queryselectorAll and then used a for loop through this object.
+I amended my EnlargeImage and ResetImageSize function by using the "this" keyword instead of variables to refer to the object created.
+
+Next step for the collage is to add a short description with the image when clicked.
