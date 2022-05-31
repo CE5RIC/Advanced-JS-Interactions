@@ -41,3 +41,5 @@ I've created an object to store all images with document.queryselectorAll and th
 I amended my EnlargeImage and ResetImageSize function by using the "this" keyword instead of variables to refer to the object created.
 
 Next step for the collage is to add a short description with the image when clicked.
+
+Concerning the image shown when hovering over a Pokémon I would like to give credit to my colleague Shiva because she helped me with this. Along with some help of our friends at W3 schools for the css part.
